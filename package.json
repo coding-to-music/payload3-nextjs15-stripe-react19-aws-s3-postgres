@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "deploy": "git add . && git commit -m Build && git push",
+    "mydeploy": "git add . && git commit -m Build && git push",
     "stripe:listen": "stripe listen --forward-to localhost:3000/api/stripe/webhooks",
     "stripe:trigger": "stripe trigger checkout.session.async_payment_succeeded",
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
